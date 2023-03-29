@@ -11,6 +11,10 @@ body {
     margin: 40px;
 }
 
+img{
+    width: 50%;
+}
+
 .box {
     background-color: #444;
     color: #fff;
@@ -34,11 +38,11 @@ body {
     display: grid;
     grid-gap: 1em;
     grid-template-areas:
-        "header"
-        "sidebar2"
-        "content"
+        "header" 
         "sidebar"
-        "footer"
+        "content"
+        "sidebar2"
+        "footer";
 }
 
 @media only screen and (min-width: 500px) {
@@ -46,8 +50,8 @@ body {
         grid-template-columns: auto 20%;
         grid-template-areas:
             "header   header"
-            "content  sidebar2"
-            "sidebar sidebar"
+            "content  sidebar"
+            "sidebar2 sidebar2"
             "footer   footer";
     }
 }
@@ -58,9 +62,8 @@ body {
         grid-template-columns: auto 20%;
         grid-template-areas:
             "header  header  header"
-            "content content sidebar2"
-            "sidebar sidebar sidebar2"
-            
+            "content content sidebar"
+            "sidebar2 sidebar2 sidebar"
             "footer  footer  footer";
 
         /* CENTRAGE */
